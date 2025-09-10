@@ -131,7 +131,7 @@ larament new my-project
 
 You can also use
 ```bash
-composer create-project --prefer-dist CodeWithDennis/larament "$project_name" herd || return 1
+HERD=1 composer create-project --prefer-dist CodeWithDennis/larament "$project_name" || return 1
 ```
 
 in your installation script to automatically set the `APP_URL`.

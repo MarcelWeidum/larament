@@ -28,12 +28,9 @@ final class SetAppUrl extends Command
      */
     public function handle(): void
     {
-        $args = $_SERVER['argv'];
-        $herd = end($args);
+        $herd = getenv('HERD');
 
-        dd('herd', $herd);
-
-        if (! $herd) {
+        if ($herd === false) {
             return;
         }
 
