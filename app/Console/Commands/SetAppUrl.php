@@ -31,6 +31,8 @@ final class SetAppUrl extends Command
         $args = $_SERVER['argv'];
         $herd = end($args);
 
+        dd('herd', $herd);
+
         if (! $herd) {
             return;
         }
